@@ -49,7 +49,7 @@
     ],
     "start_url": "/app.html",
     "scope": "/",
-    "display": "standalone",
+    "display": "minimal-ui",
     "background_color": "#ffffff",
     "theme_color": "#825ee4"
    }
