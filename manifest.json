@@ -48,8 +48,8 @@
       }
     ],
     "start_url": "/app.html",
-    "scope": "/app.html",
+    "scope": "/",
     "display": "standalone",
-    "background_color": "#825ee4",
+    "background_color": "#ffffff",
     "theme_color": "#825ee4"
    }
