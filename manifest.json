@@ -4,31 +4,31 @@
     "description": "٩(^ᴗ^)۶ Watch TV9 live Kannada for free with dark mode and advance features and much more interesting.",
     "icons": [
      {
-      "src": "/icon-36x36.png",
+      "src": "/Icon-36.png",
       "sizes": "36x36",
       "type": "image\/png",
       "density": "0.75"
      },
      {
-      "src": "/icon-48x48.png",
+      "src": "/Icon-48.png",
       "sizes": "48x48",
       "type": "image\/png",
       "density": "1.0"
      },
      {
-      "src": "/icon-72x72.png",
+      "src": "/Icon-72.png",
       "sizes": "72x72",
       "type": "image\/png",
       "density": "1.5"
      },
      {
-      "src": "/icon-96x96.png",
+      "src": "/Icon-96.png",
       "sizes": "96x96",
       "type": "image\/png",
       "density": "2.0"
      },
      {
-      "src": "/icon-144x144.png",
+      "src": "/Icon-144.png",
       "sizes": "144x144",
       "type": "image\/png",
       "density": "3.0"
