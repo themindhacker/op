@@ -77,10 +77,25 @@ body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topn
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
  <br/>
-  <div class="fb-comments" data-href="https://tv9livekannada.guru/" data-width="100%" data-numposts="20"></div>
+   <button onClick="showComments();">show comments</button>
+
+
+<div class="fb-comments" data-href="https://tv9livekannada.guru/" data-numposts="9"></div>
+
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=636244003653349&autoLogAppEvents=1"></script>
-   
+<script>
+  function showComments() { // Custom function called on click
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=636244003653349&autoLogAppEvents=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }
+
+</script>
 </center>
 <br/>
 
