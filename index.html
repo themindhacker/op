@@ -49,6 +49,19 @@
 <meta name="google-site-verification" content="Of0vEhvUFvz4tW0IbNQ3WYvCRaN0zo6P7s0cPGna7H4" />
 <style>
 body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topnav{overflow:hidden;background-color:#fff}.topnav a{float:left;color:#000;text-align:center;padding:14px 16px;text-decoration:none;font-size:17px}.topnav a:hover{background-color:#5e72e4;color:#fff}.topnav a.active{background-color:#5e72e4;color:#fff}a{text-decoration:none!important}.iframe-container{min-height:100px;background:#000 url(https://1bp.blogspot.com/-6cge2_dnkao/XxUPsBNTTyI/AAAAAAAABjw/sKzB4SxEsNEOOPjsNNZlmknhe0kq-3eIwCLcBGAsYHQ/s1600/loading-min-min.gif) no-repeat 50% top!important}.container{position:relative;width:100%;overflow:hidden;padding-top:56.25%}.responsive-iframe{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:none}.live{border:1px solid #5e72e4;border-collapse:collapse;padding:5px}.live th{border:1px solid #5e72e4;padding:5px;background:#fff}.live td{border:1px solid #5e72e4;text-align:center;padding:5px;background:#fff}.footer{text-align:center;padding:32px}#toc_container{background:#f9f9f9 none repeat scroll 0 0;border:1px solid #aaa;display:table;font-size:95%;text-align:left;margin-bottom:1em;padding:20px;width:auto}.toc_title{font-weight:700;text-align:center}#toc_container li,#toc_container ul,#toc_container ul li{list-style:outside none none!important}
+#more {display: none;}
+.button {
+  background-color: #5e72e4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 <script data-ad-client="ca-pub-1407219326366225" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
@@ -71,6 +84,7 @@ body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topn
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jdJoOhqCipA"allowfullscreen></iframe>
 </div>  
   </div>
+  <a href="#disqus_thread"><button class="button">Go to Comments</button></a>
 <br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- heder -->
@@ -344,6 +358,7 @@ Special Episode&nbsp; Playing Now!<br />
 <br />
 tv9 News<br />
 2020-07-18 22:30:00 PST - 2020-07-19 00:00:00 PST<br />
+<span id="dots">...</span><span id="more">
 <br />
 Filmy Funda<br />
 2020-07-19 00:00:00 PST - 2020-07-19 00:30:00 PST<br />
@@ -634,12 +649,28 @@ Filmy Funda<br />
 <br />
 tv9 News<br />
 2020-07-21 00:30:00 PST - 2020-07-21 01:00:00 PST<br />
-<div>
-<br /></div>
-</div>
+</span>
+<button class= "button" onclick="myFunction()" id="myBtn">Read more</button>
 <div class="footer">
 <b>© 2020 Copyright TV9 Live Kannada.Guru</b>
 </div>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 <script type='application/ld+json'> 
       {
         "@context": "http://www.schema.org",
