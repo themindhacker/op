@@ -61,10 +61,17 @@ body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topn
   <h2>TV9 Live Kannada.Guru</h2>
 </div>
 <br/>
-
-  <a herf="/"<span class="liveicon">LIVE NOW</span></a>
-
+<div class="topnav">
+  <p class="active"><span class="blink">LIVE NOW</span></p>
 </div>
+<script>
+function blink_text() {
+    $('.blink').fadeOut(500);
+    $('.blink').fadeIn(500);
+}
+setInterval(blink_text, 1000);
+	</script>
+
 <center>
 <br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -121,20 +128,6 @@ s.setAttribute('data-timestamp', +new Date());
 <div class="footer">
 <b>Copyright © 2020 TV9LIVEKANNADA.GURU</b>
 </div>
-<script>
-	//jQuery('.affiliate-links table br').remove();
-	jQuery('#loading3').show('fast');
-jQuery( document ).ready(function() {
-	jQuery('#loading3').hide();
-	jQuery(".wp-block-quote p").prepend('<img class="img" src="https://www.themes24x7.com/wp-content/themes/thenewspro/images/q.png" />');
-	function playslider(){
-	  // code to execute
-	  jQuery(".liveicon").fadeToggle(500);
-     x = setTimeout(function(){playslider()}, 500);
- }   
- playslider();
-});
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
