@@ -62,7 +62,7 @@ body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topn
 </div>
 <br/>
 <div class="topnav">
-  <p class="active">LIVE NOW</a>
+  <span class="liveicon"><p class="active"LIVE NOW</p></span>
 
 </div>
 <center>
@@ -121,6 +121,21 @@ s.setAttribute('data-timestamp', +new Date());
 <div class="footer">
 <b>Copyright © 2020 TV9LIVEKANNADA.GURU</b>
 </div>
+<script>
+	//jQuery('.affiliate-links table br').remove();
+	jQuery('#loading3').show('fast');
+jQuery( document ).ready(function() {
+	jQuery('#loading3').hide();
+
+	function playslider(){
+	  // code to execute
+	  jQuery(".liveicon").fadeToggle(500);
+     x = setTimeout(function(){playslider()}, 500);
+ }   
+ playslider();
+});
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
