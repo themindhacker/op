@@ -61,8 +61,8 @@ body{margin:30px;font-family:Arial}.header{text-align:center;color:#5e72e4}.topn
   <h2>TV9 Live Kannada.Guru</h2>
 </div>
 <br/>
-<div class="topnav">
-  <span class="liveicon"><p class="active"LIVE NOW</p></span>
+
+  <span class="liveicon">LIVE NOW</span>
 
 </div>
 <center>
@@ -126,7 +126,7 @@ s.setAttribute('data-timestamp', +new Date());
 	jQuery('#loading3').show('fast');
 jQuery( document ).ready(function() {
 	jQuery('#loading3').hide();
-
+	jQuery(".wp-block-quote p").prepend('<img class="img" src="https://www.themes24x7.com/wp-content/themes/thenewspro/images/q.png" />');
 	function playslider(){
 	  // code to execute
 	  jQuery(".liveicon").fadeToggle(500);
@@ -135,7 +135,6 @@ jQuery( document ).ready(function() {
  playslider();
 });
 </script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
