@@ -361,24 +361,6 @@ s.setAttribute('data-timestamp', +new Date());
 function myFunction(){var e=document.getElementById("dots"),n=document.getElementById("more"),t=document.getElementById("myBtn");"none"===e.style.display?(e.style.display="inline",t.innerHTML="Read more",n.style.display="none"):(e.style.display="none",t.innerHTML="Read less",n.style.display="inline")}
 </script>  
 
-<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-<script>
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 100) {
-        $('#back2Top').fadeIn();
-    } else {
-        $('#back2Top').fadeOut();
-    }
-});
-$(document).ready(function() {
-    $("#back2Top").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-});
- </script>
 
 </body>
 </html>
