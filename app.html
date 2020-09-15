@@ -71,13 +71,13 @@ setInterval(blink_text, 1000);
 <center>
 </br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- headerads --><ins class="adsbygoogle headerads" style="display:inline-block" data-ad-client="ca-pub-1407219326366225" data-ad-slot="6943637592"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></br>
 <br/>
- <div class="iframe-container"> 
+  
 <div class="video-wrap">
   <div class="video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel=UC8dnBi4WUErqYQHZ4PfsLTg&modestbranding=1"></iframe>
-  </div>
+  <img class="wid" src="https://tv9livekannada.guru/tv9-live-kannada.png" async class="play-youtube-video">
+</div>
 </div>  
-  </div>
  SHARE:
 <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftv9livekannada.guru%2F" target="_blank" rel="noopener" aria-label="">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -126,6 +126,17 @@ setInterval(blink_text, 1000);
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js'></script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-
+<script>
+var video_wrapper = $('.youtube-video-place');
+//  Check to see if youtube wrapper exists
+if(video_wrapper.length){
+// If user clicks on the video wrapper load the video.
+$('.play-youtube-video').on('click', function(){
+/* Dynamically inject the iframe on demand of the user.
+ Pull the youtube url from the data attribute on the wrapper element. */
+video_wrapper.html('<iframe allowfullscreen frameborder="0" class="embed-responsive-item" src="' + video_wrapper.data('yt-url') + '"></iframe>');
+});
+}
+</script>
 </body>
 </html>
