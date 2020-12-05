@@ -44,9 +44,221 @@
 <meta name="twitter:image" content="tv9-live-kannada.png" />
 <meta name="google-site-verification" content="Of0vEhvUFvz4tW0IbNQ3WYvCRaN0zo6P7s0cPGna7H4" />
 <meta name="yandex-verification" content="855459751500606e" />
-<link rel="stylesheet" href="/main.css">
+<style>
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400
+}
 
-<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' rel='stylesheet'/>
+p {
+    line-height: 1.4
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Nunito, sans-serif;
+    font-weight: 600
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.header {
+    text-align: center;
+    background: #5e72e4;
+    padding: 7px;
+    color: #fff;
+    display: inherit;
+    text-decoration: none;
+    font-size: 24px
+}
+
+.header a {
+    color: #fff
+}
+
+a {
+    text-decoration: none
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff
+}
+
+.topnav a {
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px
+}
+
+.topnav a:hover {
+    background-color: #5e72e4;
+    color: #fff
+}
+
+.topnav p.active {
+    text-align: center;
+    background-color: #5e72e4;
+    color: #fff
+}
+
+a {
+    text-decoration: none !important
+}
+
+.iframe-container {
+    max-width: 900px;
+    min-height: 100px;
+    background: #000 url(https://tv9livekannada.guru/loading.gif) no-repeat 50% top !important
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%
+}
+
+.video-container embed,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: none
+}
+
+.video-wrap {
+    width: 100%;
+    max-width: 900px
+}
+
+.live {
+    border: 1px solid #5e72e4;
+    border-collapse: collapse;
+    padding: 5px
+}
+
+.live th {
+    border: 1px solid #5e72e4;
+    padding: 5px;
+    background: #fff
+}
+
+.live td {
+    border: 1px solid #5e72e4;
+    text-align: center;
+    padding: 5px;
+    background: #fff
+}
+
+.footer {
+    text-align: center;
+    padding: 32px
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    text-align: left;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: 75%
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center
+}
+
+#toc_container li,
+#toc_container ul,
+#toc_container ul li {
+    list-style: outside none none !important
+}
+
+#more {
+    display: none
+}
+
+.button {
+    background-color: #5e72e4;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #5e72e4
+}
+
+.headerads {
+    width: 320px;
+    height: 100px
+}
+
+@media(min-width:500px) {
+    .headerads {
+        width: 468px;
+        height: 60px
+    }
+}
+
+@media(min-width:800px) {
+    .headerads {
+        width: 720px;
+        height: 90px
+    }
+}
+
+.mainads {
+    width: 300px;
+    height: 250px;
+}
+
+@media(min-width: 500px) {
+    .mainads {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(min-width: 800px) {
+    .mainads {
+        width: 728px;
+        height: 300px;
+    }
+}
+</style>
 <script>
    	(function (global) {
 
@@ -100,15 +312,9 @@
 </head>
 <body>	
 <div class="header"><a href="/">TV9 Live Kannada ٩(^ᴗ^)۶</a></div>
-<script>
-function blink_text() {
-    $('.blink').fadeOut(500);
-    $('.blink').fadeIn(500);
-}
-setInterval(blink_text, 1000);
-	</script>
+
 <center>
-  <p style="color:#5e72e4;"><span id="blink">LIVE NOW</span></p>
+  <p style="color:#5e72e4;">LIVE NOW</p>
 
 <br/>
  	<div class="iframe-container"> 
