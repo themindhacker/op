@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 	<title>Live 2</title>
 	<meta name="theme-color" content="#1a75ff"/>
  <meta name="apple-mobile-web-app-status-bar-style" content="#1a75ff"/>
@@ -11,8 +12,27 @@
 <meta charset="utf-8">
 <meta name="google" value="notranslate">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script>
+$(document).ready(function(){
+ $("form").submit(function(){
+   var response = grecaptcha.getResponse();
+      if(response.length == 0){
+          alert('Please check the Captcha');
+    return false;
+ } 
+ });
+});
+</script>
+ <script type="text/javascript">
+ var onloadCallback = function() {
+ grecaptcha.render('html_element', {
+ 'sitekey' : '6LfVPJ4UAAAAAAjkD3JXmHIDnysR67oTr2_aolgg'
+ });
+ };
+ </script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+ async defer>
+ </script>
 <style>
 			
 			
@@ -329,10 +349,10 @@ Here is the list of the anchor's of TV9 Kannada News.
 <p>TV9 Live Kannada does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 <center>
 	<b>Please check the captcha box to proceed to the destination page. &#128071;</b>
-
-      <div class="g-recaptcha" data-sitekey="6LfVPJ4UAAAAAAjkD3JXmHIDnysR67oTr2_aolgg"></div>
-      <br/>
-      <br/>
+<br/>
+      <form action="/live1.html" method="post">
+   <div id="html_element"></div>
+       <br/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive -->
 <ins class="adsbygoogle"
@@ -345,9 +365,11 @@ Here is the list of the anchor's of TV9 Kannada News.
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br/>
-    <a href="/live1.html" <button class="button">Download/Save File</button></a>
-    
-<br/>
+       <input class="button" type="submit" value="Download/Save File">
+   </form> 
+      <br/>
+  
+   
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive -->
 <ins class="adsbygoogle"
